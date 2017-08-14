@@ -4,6 +4,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 body{
 	margin:0;
 	padding:0;
@@ -176,25 +178,33 @@ img.img-head {
 	margin-top: 2em;
 }
 .logo h1{
-   font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    color: #000;
-	display: inline-block;
+  display: inline-block;
 	position:relative;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #e60000;
+  font: normal 40px/60px 'Permanent Marker';
+  text-align: center;
+  color: #FFFFFF;
+  background: #e60000;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+              0 6px 10px rgba(0,0,0,.15);
 }
-.logo h1 a{
+
+/*.logo h1 a{
     text-decoration:none;
     color: #000;
-}
-.logo h1 span {
+}*/
+.logo span {
     font-size: 12px;
     display: block;
     letter-spacing: 4px;
-    text-transform: uppercase;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Special Elite', cursive;
     padding-top: 4px;
+    bottom: 10px;
 }
-.logo h1  b {
+/*.logo h1  b {
     font-size: 8px;
     background: #ED0612;
     font-weight: normal;
@@ -205,7 +215,33 @@ img.img-head {
     left: -2px;
     color: #fff;
     line-height: 8px;
+}*/
+
+/*.logo::before,
+.logo::after {
+  content: '';
+ /* position: relative;
+  z-index: -1;
+  left: -10px;
+  top: 24px;
+  display: inline-block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #e60000;
+  border-right: 20px solid #e60000;
+  border-bottom-color: #e60000;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
 }
+
+.logo::after {
+  left: auto;
+  right: -10px;
+  border-left: 20px solid #e60000;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}*/
+
 .head-t {
     margin: 1em 0;
 }
@@ -2865,9 +2901,9 @@ nav.navbar.navbar-default {
 .pro-1 {
     padding: 0 5px;
 }
-.banner-info {
+/*.banner-info {
     margin: 2em 0;
-}
+}*/
 img.img-head {
     width: 19%;
 }
@@ -2884,14 +2920,14 @@ img.img-head {
     top: 6px;
     left: -8px;
     line-height: 6.5px;
-}
+}*/
 .card li a {
     font-size: 0.85em;
     margin: 0 0.3em;
 }
-.banner-info h3 {
+/*.banner-info h3 {
     font-size: 1.4em;
-}
+}*/
 .search-form input[type='submit'] {
     width: 35px;
     height: 35px;
