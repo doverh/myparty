@@ -21,7 +21,8 @@ body a{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Montserrat', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;	
 }	
 p,label{
 	margin:0;
@@ -31,6 +32,28 @@ ul{
 	padding:0;
 }
 
+/**Confetti**/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+[class|="confetti"] {
+  position: absolute;
+}
+
+.red {
+  background-color: #d13447;
+}
+
+.yellow {
+  background-color: #ffbf00;
+}
+
+.blue {
+  background-color: #263672;
+}
 /*--popup--*/
 .agileits {
     padding: 3em;
@@ -180,7 +203,8 @@ img.img-head {
 .logo h1{
   display: inline-block;
 	position:relative;
-  width: 400px;
+  margin:0!important;
+  width: 75%;
   height: 60px;
   border: 1px solid #e60000;
   font: normal 40px/60px 'Permanent Marker';
@@ -197,7 +221,7 @@ img.img-head {
     color: #000;
 }*/
 .logo span {
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     letter-spacing: 4px;
     font-family: 'Special Elite', cursive;
@@ -528,7 +552,7 @@ span.fa.fa-shopping-cart.my-cart-icon {
 }
 .search-form input[type='text']{
 	width: 93%;
-    padding: 15px;
+    padding: 5px;
     outline: none;
     font-size: 1.5em;
     color: #fff;
@@ -537,15 +561,16 @@ span.fa.fa-shopping-cart.my-cart-icon {
     margin-bottom:1.5em;
 }
 .search-form input[type='submit']{
-	 width: 80px;
+    margin: 0!important;
     height: 41px;
+    width: 60px;
     outline: none;
     border: 1px solid #fff;
-    background: url(../images/can.png) no-repeat 6px 7px #FCCD1E;
+    background: url(../can.png) no-repeat 6px 7px #FCCD1E;
     display: inline-block;
 }
 .search-form input[type='submit']:hover {
-    background: url(../images/can.png) no-repeat 6px 7px #039445;
+    background: url(../can.png) no-repeat 6px 7px #e60000;
         transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -587,7 +612,7 @@ span.fa.fa-shopping-cart.my-cart-icon {
 	width: 100%;
     height: 2px;
     display: block;
-    background: #039445;
+    background: #e60000;
     margin-bottom: 3px;
 }
 .ser-t b.line{
@@ -606,7 +631,7 @@ span.fa.fa-shopping-cart.my-cart-icon {
 .ser-t  span i{
 	width: 20px;height: 20px;
     display: block;
-    border: 2px solid #039445;
+    border: 2px solid #e60000;
     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
     -moz-transform: rotate(45deg) translate3d(0, 0, 0);
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -2595,7 +2620,7 @@ ul.multi-column-dropdown {
 }
 .search-form {
     width: 76%;
-    margin: 0 auto;
+    margin: 20px;
 }
 .banner-info {
     margin: 5em 0;
