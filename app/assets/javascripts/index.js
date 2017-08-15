@@ -1,10 +1,14 @@
+$(document).ready(function() {
+  $('#vert').val('V\nE\nN\nD\nO\nR');   
+});
+
 for (var i = 0; i < 150; i++) {
   create(i);
 }
 
 function create(i) {
   var width = Math.random() * 8;
-  var height = width * 0.4;
+  var height = width * 0.5;
   var colourIdx = Math.ceil(Math.random() * 3);
   var colour = "red";
   switch(colourIdx) {
