@@ -22,8 +22,13 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
-  database: myparty_development
+  adapter: postgresql
+  encoding: unicode
+  database: party_development
+  host: localhost
+  pool: 5
+  username: partyAdmin
+  password: Medeve@#$742
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
