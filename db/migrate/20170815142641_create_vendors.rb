@@ -11,7 +11,7 @@ class CreateVendors < ActiveRecord::Migration[5.1]
       t.string :zip
       t.string :picture
       t.string :website
-
+      
       t.timestamps
     end
   end

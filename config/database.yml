@@ -24,11 +24,11 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: party_development
+  database: part_dev
   host: localhost
   pool: 5
-  username: partyAdmin
-  password: Medeve@#$742
+  username: root
+  password: my_pass
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

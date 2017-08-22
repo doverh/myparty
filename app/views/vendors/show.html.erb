@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Vide" />
+<meta name="keywords" content="Big store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../assets/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="../assets/style.css" rel='stylesheet' type='text/css' />
+<!-- js -->
+   <script src="../assets/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../assets/move-top.js"></script>
+<script type="text/javascript" src="../assets/easing.js"></script>
+
+<!-- 
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> -->
+<!-- start-smoth-scrolling -->
+<link href="../assets/font-awesome.css" rel="stylesheet"> 
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<body>
+<% provide(:title, 'Vendor dashboard') %>
+
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+  <center><h1>Dashboard</h1></center>
+  <table>
+    <tr>
+      <td><%= @vendor.name %></td>
+      <td><%= @vendor.email %></td>
+      <td><%= link_to 'Show', vendor_path(@vendor) %></td>
+    </tr>
+</table>
+  </div>
+</div>
+</body>
+</html>

@@ -7,7 +7,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Party.me - Everthing you need for a party</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -27,7 +26,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script type="text/javascript" src="../assets/move-top.js"></script>
 <script type="text/javascript" src="../assets/easing.js"></script>
 
-
+<!-- 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -35,12 +34,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script>
+</script> -->
 <!-- start-smoth-scrolling -->
 <link href="../assets/font-awesome.css" rel="stylesheet"> 
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-<!--- start-rate---->
+<!-- <!--- start-rate
 <script src="../assets/jstarbox.js"></script>
 	<link rel="stylesheet" href="../assets/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript">
@@ -64,7 +63,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			});
 		});
 		</script>
-<!---//End-rate---->
+//End-rate----> 
 
 </head>
 <body>
@@ -72,14 +71,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Banner corner
 <a href="offer.html"><img src="../assets/download.png" class="img-head" alt=""></a> -->
 <div class="header">
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script type="text/javascript" src="../assets/index.js"></script>
 		<div class="container">
-			<div class="logo">
+		<!-- 	<div class="logo">
 				<h1>PARTY.ME</h1>
 				<span>Everthing you need for a party</span>
-			</div>
+			</div> -->
 		
 			<!-- <div class="head-t">
 				<ul class="card">
@@ -263,13 +262,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>	 -->		
 
 </div>
-  <!---->
+  <!VIDEO---->
 <div data-vide-bg="../assets/video_dance">
     <div class="container">
 		<div class="banner-info">
 			<div class="search-form">
-			<button type="button" class="btn btn-danger left"><h4>VENDORS</h4></button>
- 
+			<form action="" method="GET">
+			<button type="button" class="btn btn-danger left" onclick="window.location = '/signup'"><h4>VENDORS</h4></button>
+ 			</form>	
 				<div>
 				<form action="#" method="post">
 						<h3>Where's your party?</h3>	
@@ -282,7 +282,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</form>
 			</div>		
 		</div>	
-    </div>
+<!--     </div> -->
 </div>
 
     <script src="../assets/jquery-1.11.1.min.js"></script>

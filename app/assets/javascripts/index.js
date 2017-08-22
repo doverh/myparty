@@ -50,3 +50,8 @@ function reset(x) {
     drop(x);             
   });
 }
+/*
+jQuery(function($){
+    $("#appointment_phone").mask("(999) 999-9999");
+  });
+}*/

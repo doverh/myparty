@@ -70,6 +70,19 @@ ul{
            transform: rotate(90deg) translate(50%, 50%);
 }
 
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
 /**Confetti**/
 .wrapper {
   position: relative;
@@ -2988,7 +3001,7 @@ img.img-head {
     font-size: 0.85em;
     margin: 0 0.3em;
 }
-/*.banner-info h3 {
+/*.banner-info h3 { 
     font-size: 1.4em;
 }*/
 .search-form input[type='submit'] {

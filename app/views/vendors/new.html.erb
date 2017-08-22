@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Vide" />
+<meta name="keywords" content="Big store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../assets/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="../assets/style.css" rel='stylesheet' type='text/css' />
+<!-- js -->
+   <script src="../assets/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../assets/move-top.js"></script>
+<script type="text/javascript" src="../assets/easing.js"></script>
+<script type="text/javascript" src="../assets/index.js"></script>
+<script> 
+  jQuery(function($){
+    $("#appointment_phone").mask("(999) 999-9999");
+  });
+</script>
+<!-- 
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> -->
+<!-- start-smoth-scrolling -->
+<link href="../assets/font-awesome.css" rel="stylesheet"> 
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<body>
+<% provide(:title, 'Sign up') %>
+
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+  <center><h1>Sign up</h1></center>
+
+    <%= form_for(@vendor) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :poc %>
+      <%= f.text_field :poc %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.label :phone %>
+      <%= f.phone_field :phone %>
+ 
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+
+      <%= f.label :zip %>
+      <%= f.text_field :zip %>
+
+      <%= f.label :website %>
+      <%= f.text_field :website %>
+
+      <%= f.label :picture %>
+      <%= f.file_field :picture %>
+
+
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+</body>
+</html>
